@@ -1,0 +1,11 @@
+div{
+    width: 80hv;
+    height: 800px;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    max-width: 600px;
+  }
+  

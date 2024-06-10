@@ -1,0 +1,21 @@
+<form (submit)="OnSubmit()" [formGroup]="form">
+    <mat-form-field>
+        <mat-label>Nombre*</mat-label>
+        <input formControlName="nombre" matInput/>
+        <mat-error *ngIf="form.invalid">
+     El campo Nombre es requerido
+     </mat-error>
+    </mat-form-field>
+
+    <div>
+        <app-mapa></app-mapa>
+    </div>
+
+    <div>
+        <button mat-flat-button color="primary" >
+            Guardar Cambios
+        </button>
+        <a mat-stroked-button color="primary" routerLink="/cines">
+            Cancelar
+        </a>
+    </div>
